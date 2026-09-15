@@ -1,0 +1,14 @@
+from typing import List, Dict
+
+
+def group_names_and_scores(names: List[str], scores: List[int]) -> Dict[str, int]:
+    my_dictionary = {}
+    #loop over both of the lists 
+    for name, score in zip(names,scores):
+        #assign the key of name to the value of the score as you loop through both 
+        my_dictionary[name] = score
+    return my_dictionary  
+# do not modify below this line
+print(group_names_and_scores(["Alice", "Bob", "Charlie"], [90, 80, 70]))
+print(group_names_and_scores(["Jane", "Carol", "Charlie"], [25, 100, 60]))
+print(group_names_and_scores(["Doug", "Bob", "Tommy"], [80, 90, 100]))
